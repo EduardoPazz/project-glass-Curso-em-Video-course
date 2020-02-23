@@ -6,6 +6,12 @@ html {box-sizing: border-box}
 
 *, *::before, *::after {box-sizing: inherit}
 
+/* header nav */
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
 /* figure */
 
 figure.foto-legenda {
@@ -49,7 +55,4 @@ figure.foto-legenda figcaption:hover {
 
 /* inline */
 
-p {
-    text-align: justify;
-    text-indent: 50px;
-}
+
