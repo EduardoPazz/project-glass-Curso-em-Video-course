@@ -2,6 +2,7 @@
 
 const links = document.querySelectorAll('nav li')
 const img = document.querySelector('header img')
+const defaultImageSource = document.querySelector('header img').src;
 
 links.forEach(link => {
     let src;
@@ -29,5 +30,5 @@ links.forEach(link => {
     }
 
     link.addEventListener('mouseover', () => img.setAttribute('src', src))
-    link.addEventListener('mouseout', () => img.setAttribute('src', './_imagens/glass-oculos-preto-peq.png'))
+    link.addEventListener('mouseout', () => img.setAttribute('src', defaultImageSource))
 })
