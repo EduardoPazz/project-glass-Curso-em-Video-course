@@ -13,6 +13,7 @@ html {box-sizing: border-box}
 *, *::before, *::after {box-sizing: inherit}
 
 /* body */
+
 body {
     font-family: 'Roboto', sans-serif;
 
@@ -37,7 +38,7 @@ div#interface {
 /* header */
 
 header {
-    border-bottom: black solid 1px;
+    border-bottom: #606060 solid 1px;
 
     height: 150px;
 
@@ -107,7 +108,18 @@ nav ul a:hover {
     color: white;
     text-decoration: underline;
 }
-/* figure */
+
+/* section */
+
+section {
+    display: block;
+    width: 60%;
+    float: left;
+    padding-right: 15px;
+    border-right: #606060 1px solid;
+}
+
+/* section figure */
 
 figure.foto-legenda {
     border: 8px solid white;
@@ -146,6 +158,31 @@ figure.foto-legenda figcaption {
 
 figure.foto-legenda figcaption:hover {
     opacity: 1;
+}
+
+/* aside */
+
+aside {
+    display: block;
+    width: 35%;
+    float: right;
+}
+
+/* footer */
+
+footer {
+    border-top: #606060 solid 1px;
+    padding-top: 15px;
+    clear: both;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer * {
+    display: inline;
 }
 
 /* inline */
