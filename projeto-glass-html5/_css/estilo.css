@@ -25,6 +25,11 @@ body {
     background-color: whitesmoke;
 }
 
+p {
+    text-indent: 25px;
+    text-align: justify;
+}
+
 /* div#interface */
 
 div#interface {
@@ -160,12 +165,32 @@ figure.foto-legenda figcaption:hover {
     opacity: 1;
 }
 
+/* section table */
+
+section table {
+    border: 1px solid #606060;
+    margin: auto auto;
+    border-collapse: collapse;
+}
+
+section table td, section table th {
+    border: 1px solid #606060;
+    padding: 5px 10px;
+}
+
+section table th {
+    text-align: right;
+    color: white;
+    background: #606060;
+}
+
 /* aside */
 
 aside {
     display: block;
     width: 35%;
     float: right;
+    margin-right: 15px;
 }
 
 /* footer */
@@ -187,4 +212,8 @@ footer * {
 
 /* inline */
 
-
+span {
+    font-size: 10px; 
+    float: right;
+    margin-top: 9px;
+}
