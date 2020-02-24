@@ -3,7 +3,6 @@
     font-family: 'Bubble Gum';
     src: url(../_fonts/bubblegum-sans-regular.otf)
 };
-
 @import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap');
 
 /* border box */
@@ -30,6 +29,19 @@ p {
     text-align: justify;
 }
 
+a {
+    text-decoration: none;
+
+    color: black;
+
+    transition: inherit;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 /* div#interface */
 
 div#interface {
@@ -40,9 +52,9 @@ div#interface {
     box-shadow: 0px 0px 10px gray;
 }
 
-/* header */
+/* header#cabecalho */
 
-header {
+header#cabecalho {
     border-bottom: #606060 solid 1px;
 
     height: 150px;
@@ -50,7 +62,7 @@ header {
     background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 95px;
 }
 
-header h1 {
+header#cabecalho h1 {
     color: gray;
     text-shadow: 1px 1px 1px black;
     margin-bottom: 0;
@@ -58,20 +70,20 @@ header h1 {
     font-family: 'Bubble Gum', sans-serif;
 }
 
-header h2 {
+header#cabecalho h2 {
     color: rgba(128, 128, 128, 0.781);
     margin-top: 0;
 
     font-family: 'Titillium Web', serif;
 }
 
-header img {
+header#cabecalho img {
     position: absolute;
     top: 90px;
     right: 100px;
 }
 
-/* header nav */
+/* header#cabecalho nav */
 
 nav h1 {
     display: none;
@@ -85,33 +97,18 @@ nav ul {
 
 nav ul li {
     display: inline-block;
+    padding: 5px;
 
     list-style: none;
-
     text-transform: uppercase;
 
     background-color: rgba(128, 128, 128, 0.575);
-
-    padding: 5px;
 
     transition: background 500ms;
 }
 
 nav ul li:hover {
     background-color: gray;
-}
-
-nav ul a {
-    text-decoration: none;
-
-    color: black;
-
-    transition: inherit;
-}
-
-nav ul a:hover {
-    color: white;
-    text-decoration: underline;
 }
 
 /* section */
@@ -122,6 +119,39 @@ section {
     float: left;
     padding-right: 15px;
     border-right: #606060 1px solid;
+}
+
+section h2 {
+    background: rgb(185, 180, 180);
+    padding: 5px 20px;
+    color: #606060;
+}
+
+/* section header */
+
+section header hgroup * {
+    margin-bottom: 0;
+}
+
+section header h1 {
+    color: gray;
+    font-family: 'Bubble Gum', sans-serif;
+}
+
+section header h2 {
+    color: #2b2b2b;
+    background: none;
+    font-size: 15px;
+}
+
+section header h3 {
+    color: #6d6c6c;
+    background: none;
+    font-size: 15px;
+}
+
+section header h2 + h3 {
+    text-align: right;
 }
 
 /* section figure */
@@ -161,6 +191,10 @@ figure.foto-legenda figcaption {
     transition: all 500ms;
 }
 
+figure.foto-legenda figcaption p {
+    text-align: center;
+}
+
 figure.foto-legenda figcaption:hover {
     opacity: 1;
 }
@@ -188,9 +222,23 @@ section table th {
 
 aside {
     display: block;
-    width: 35%;
+    width: 30%;
     float: right;
-    margin-right: 15px;
+    margin: 15px 15px 0 0;
+    background: rgb(208, 208, 209);
+    padding: 0 25px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
+}
+
+aside h1 {
+    color: gray;
+    font-family: 'Bubble Gum', sans-serif;
+}
+
+aside h2 {
+    background: rgb(185, 180, 180);
+    padding: 5px 20px;
+    color: #606060;
 }
 
 /* footer */
