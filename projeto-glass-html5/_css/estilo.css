@@ -6,11 +6,53 @@ html {box-sizing: border-box}
 
 *, *::before, *::after {box-sizing: inherit}
 
+/* body */
+body {
+    font-family: sans-serif;
+}
+
+
 /* header nav */
 
-nav ul li{
+nav h1 {
+    display: none;
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav ul li {
     display: inline-block;
+
     list-style: none;
+
+    text-transform: uppercase;
+
+    background-color: rgba(128, 128, 128, 0.575);
+
+    padding: 5px;
+
+    transition: all 500ms;
+}
+
+nav ul li:hover {
+    background-color: gray;
+}
+
+nav ul a {
+    text-decoration: none;
+
+    color: black;
+
+    transition: inherit;
+}
+
+nav ul a:hover {
+    color: white;
+    text-decoration: underline;
 }
 /* figure */
 
