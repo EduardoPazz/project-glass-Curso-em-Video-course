@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* form */
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+/* fieldset */
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#contato {
+    background: url(../_imagens/icone-contato.png) no-repeat right;
+    background-size: 150px;
+}
+
+#endereco {
+    background: url(../_imagens/icone-endereco.png) no-repeat right;
+    background-size: 150px;
+}
+
+fieldset#mensagem {
+    background: url(../_imagens/icone-mensagem.png) no-repeat right;
+    background-size: 150px;
+}
+
+#shopping {
+    background: url(../_imagens/icone-pagamento.png) no-repeat right;
+    background-size: 150px;
+}
+
+fieldset.gen {
+    width: 170px;
+}
+
+fieldset.gen legend {
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* input e textarea */
+
+input, textarea {
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+input:hover, textarea:hover {
+    background-color: rgba(128, 128, 128, 0.719);
+}
+
+
+
+
