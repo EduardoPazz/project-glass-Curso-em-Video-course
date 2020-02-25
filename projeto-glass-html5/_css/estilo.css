@@ -113,7 +113,7 @@ nav ul li:hover {
 
 /* section */
 
-section {
+section.floatable {
     display: block;
     width: 60%;
     float: left;
