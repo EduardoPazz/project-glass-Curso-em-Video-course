@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div#multimidia {
+    margin: 10px auto 0;
+    background: url(../_imagens/radio-tv.png) no-repeat center;
+    width: 900px;
+    height: 580px;
+    position: relative;
+}
+
+div#multimidia video {
+    position: absolute;
+    top: 50px;
+    left: 95px;
+
+    height: 347px;
+    width: 425px;
+    outline: 0;
+}
+
+div#multimidia audio {
+    position: absolute;
+    top: 495px;
+    left: 567px;
+    width: 314px;
+    height: 50px;
+    outline: 0;
+    color: black;
+}
+
