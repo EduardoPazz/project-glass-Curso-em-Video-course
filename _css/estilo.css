@@ -218,6 +218,13 @@ section table th {
     background: #606060;
 }
 
+/* section video */
+
+section video {
+    display: block;
+    margin: 10px auto;
+}
+
 /* aside */
 
 aside {
@@ -239,6 +246,10 @@ aside h2 {
     background: rgb(185, 180, 180);
     padding: 5px 20px;
     color: #606060;
+}
+
+aside video {
+    width: 100%;
 }
 
 /* footer */
